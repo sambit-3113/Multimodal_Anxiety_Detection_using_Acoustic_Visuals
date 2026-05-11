@@ -1,0 +1,14 @@
+data_dir: "../data_0.5s"
+train_gender: both
+test_gender: both
+
+model: TAMFN
+
+epochs: 50
+batch_size: 32
+learning_rate: 0.0001
+lr_scheduler: cos
+device:
+  - "cuda"
+
+seed: 25
