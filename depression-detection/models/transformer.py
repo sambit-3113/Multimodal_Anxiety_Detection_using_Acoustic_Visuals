@@ -42,7 +42,7 @@ class DepressionDetector(BaseNet):
         )
 
         # =======================
-        # 🔥 ADDED: LayerNorm after Cross-Attention
+        # ADDED: LayerNorm after Cross-Attention
         # (To match paper's Add & Norm block)
         # =======================
         self.norm_av = nn.LayerNorm(d)   # For audio branch
@@ -83,7 +83,7 @@ class DepressionDetector(BaseNet):
         cross_va_out = self.cross_va(qv, ka, va)[0]
 
         # =======================
-        # 🔥 UPDATED PART:
+        # UPDATED PART:
         # Add & Norm after Cross Attention
         # (Residual connection + LayerNorm)
         # =======================
