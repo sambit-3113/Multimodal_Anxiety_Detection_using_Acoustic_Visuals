@@ -1,6 +1,6 @@
 # depression-detection
 
-The final coursework for AI in Mental Health @ PKU.
+The work is inspired and taken from https://github.com/AllenYolk with some minor modifications and newer introductions of the models.
 
 ## Prepare the Dataset
 
@@ -32,13 +32,6 @@ wandb.init(
     project="dvlog", entity="<your-wandb-id>", config=args, name=wandb_run_name,
 )
 ```
-
-## Run the Notebook
-
-In the notebook, we use the **Integrated Gradients** approach to conduct input attribution.
-
-* Sundararajan, M., Taly, A., & Yan, Q. (2017). Axiomatic Attribution for Deep Networks (arXiv:1703.01365). arXiv. [https://doi.org/10.48550/arXiv.1703.01365](https://doi.org/10.48550/arXiv.1703.01365)
-
 Remember to locate your own registered model by chaning the following line:
 
 ```python
