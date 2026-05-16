@@ -17,8 +17,7 @@ We thanks a lot for the author's kind help with the dataset!
 Run `main.py` to train and test the model.
 
 * All the packages used in this project can be installed through `conda` or `pip`.
-* We implement 3 models.
-    * `TMeanNet`: average over the temporal domain, and then feed the features into a MLP.
+* We implement 2 models.
     * `DepressionDetector`: transformer-based model, with cross-modal attention. 
         * Yoon, J., Kang, C., Kim, S., & Han, J. (2022). D-vlog: Multimodal Vlog Dataset for Depression Detection. Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 12226–12234. [https://doi.org/10.1609/aaai.v36i11.21483](https://doi.org/10.1609/aaai.v36i11.21483)
     * `TAMFN`: Temporal Conv1d + Temporal attention.
