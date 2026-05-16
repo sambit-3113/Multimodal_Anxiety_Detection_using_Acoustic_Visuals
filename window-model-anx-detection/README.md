@@ -1,4 +1,4 @@
-# Window-Based Anxiety Detection Dataset Loader  
+# Window-Based Anxiety Detection
   
 This module implements a window-based data loading pipeline for anxiety detection using multimodal DVlog features.   
 The previous implementation used complete sequences, whereas this updated version divides the temporal features into overlapping fixed-size windows for better temporal learning and increased training samples.  
