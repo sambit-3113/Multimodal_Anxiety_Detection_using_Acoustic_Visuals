@@ -1,0 +1,20 @@
+data_dir: "../data_0.5s"
+
+train_gender: both
+test_gender: both
+
+model: SimpleANN
+
+epochs: 50
+batch_size: 4
+learning_rate: 0.0001
+lr_scheduler: cos
+
+# NEW PARAMETERS
+window_size: 10
+overlap: 0.5
+
+device:
+  - "cuda"
+
+seed: 42
