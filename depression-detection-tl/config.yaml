@@ -1,0 +1,35 @@
+# ===== DATA =====
+data_dir: "../data_0.5s"
+train_gender: both
+test_gender: both
+
+# ===== MODEL =====
+model: DepressionDetector   # TMeanNet / TAMFN / ChunkTransformerNet
+
+# ===== TRAINING =====
+epochs: 50
+batch_size: 8
+learning_rate: 0.0001
+lr_scheduler: cos
+device:
+  - "cuda"
+
+seed: 89
+
+# # ===== TRANSFER LEARNING =====
+# pretrained_path: null  # e.g. "weights/DepressionDetector_dvlog-dataset.pt" or null 
+# freeze_backbone: false
+# finetune_layers: false
+
+# ===== TRANSFER LEARNING ===== (newer)
+pretrained_path: null #"weights/DepressionDetector_dvlog-dataset.pt"
+
+freeze_backbone: false
+
+tl_mode: "fc"  
+# options:
+# "fc"          → only classifier
+# "all"         → all transformer layers partial
+# "multimodal"  → only multimodal partial
+
+num_freeze: 3   # how many layers to freeze
